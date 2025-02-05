@@ -13,7 +13,7 @@ body, html {
 
 /* Navigation Bar */
 .nav-bar {
-  width: 100%;
+  /* width: 100%; */
   position: fixed;
   top: 0;
   left: 0;
@@ -47,27 +47,30 @@ body, html {
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
 }
 
 /* Hero Section */
 .hero-section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url('https://source.unsplash.com/1600x900/?technology,minimal,futuristic') no-repeat center center/cover;}
+  padding: 0 20px;
+  background: url('https://source.unsplash.com/1600x900/?technology,minimal,futuristic') no-repeat center center/cover;
+}
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: #222;
+  max-width: 90%;
 }
 
 .hero-subtext {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   max-width: 600px;
   color: #555;
 }
@@ -78,7 +81,7 @@ body, html {
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -98,13 +101,13 @@ body, html {
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #222;
 }
 
 .section-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
   color: #555;
@@ -141,14 +144,16 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .contact-box {
   background: white;
-  padding: 30px;
+  padding: 94px;
   border-radius: 12px;
   text-align: center;
-  width: 400px;
+  width: 100%;
+  max-width: 539px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -160,12 +165,13 @@ body, html {
   border-radius: 8px;
   font-size: 1rem;
   margin-top: 10px;
+  resize: none;
 }
 
 .contact-box button {
   width: 100%;
   padding: 14px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   background: #007bff;
   color: white;
