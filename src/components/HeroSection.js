@@ -1,23 +1,18 @@
 import React from 'react';
 
-const HeroSection = ({ mediaType = "video", mediaSrc = "/assets/neon-lines2.mp4" }) => {
+const HeroSection = () => {
   return (
     <section className="hero">
-      {/* Conditional Rendering for Media Types */}
-      {mediaType === "image" && (
-        <img src={mediaSrc} alt="Background" className="hero-media" />
-      )}
-      {mediaType === "gif" && (
-        <img src={mediaSrc} alt="Animated Background" className="hero-media" />
-      )}
-      {mediaType === "video" && (
-        <video autoPlay loop muted playsInline className="hero-media">
-          <source src={process.env.PUBLIC_URL + mediaSrc} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      )}
+      {/* Embedded Video from Google Drive */}
+      <video autoPlay loop muted playsInline className="hero-media">
+        <source 
+          src="https://drive.google.com/uc?export=download&id=1PWv4U2iqTN-u4ugnHPjznbWod5i765WJ" 
+          type="video/mp4" 
+        />
+        Your browser does not support the video tag.
+      </video>
 
-      {/* Dark Overlay for Better Text Visibility */}
+      {/* Dark Overlay for Readability */}
       <div className="hero-overlay"></div>
 
       {/* Hero Text */}
