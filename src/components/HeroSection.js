@@ -3,15 +3,11 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section className="hero">
-      {/* Embedded Video from Google Drive */}
+      {/* Embedded Video from Dropbox */}
       <video autoPlay loop muted playsInline className="hero-media">
-        <source 
-          src="https://drive.google.com/uc?export=download&id=1PWv4U2iqTN-u4ugnHPjznbWod5i765WJ" 
-          type="video/mp4" 
-        />
-        Your browser does not support the video tag.
+        <source src="https://www.dropbox.com/scl/fi/whkdu2236nf8o35c25isy/neon-lines2.mp4?rlkey=12zki4m0gwcf41vgil05dj49y&st=jts9tk69&raw=1" type="video/mp4" />
+        Your browser does not support the video tag or the video failed to load.
       </video>
-
       {/* Dark Overlay for Readability */}
       <div className="hero-overlay"></div>
 
